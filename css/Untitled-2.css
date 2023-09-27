@@ -1,0 +1,302 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgba(137, 43, 226, 0.568);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo{
+    text-decoration: none;
+    color: blueviolet;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    animation:animate 5s linear infinite ;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left:30px ;
+
+}
+.navigation a:hover{
+    color: blueviolet;
+}
+section{
+    padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../css/Untitled_logo_1_free-file.jpg) ;
+    background-size: cover;
+    background-position: center;
+
+}
+.main h2 {
+    color: blueviolet;
+    font-size: 1.4em;
+    font-weight: 500;
+
+
+}
+.main h2 span {
+    display: inline-block;
+    margin-top:  10px;
+    color: rgba(226, 43, 211, 0.733);
+    font-size: 3em;
+    font-weight: 600;
+
+}
+.main h3 {
+    color: blueviolet;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btu {
+    color: black;
+    background-color: violet;
+    text-decoration: none;
+   font-size: 1.1em;
+   font-weight: 600;
+   text-transform: uppercase;
+   display: inline-block;
+   padding: 0.9375em 2.1875em;
+   border: 4px solid blueviolet;
+   letter-spacing: 1px;
+   border-radius: 15px;
+   margin-bottom: 40px;
+   transition: 0.7s ease;
+   animation:animate 5s linear infinite ;
+}
+.main-btu:hover {
+    color: blueviolet;
+    border-color: blueviolet;
+    box-shadow: 0 0 0 blueviolet;
+    animation: box 3s infinite;
+    
+}
+@keyframes box{
+    0%{
+        box-shadow: #27272c;
+    }
+    50%{
+        box-shadow: 0 0 27px;
+    }
+    100%{
+        box-shadow: #27272c;
+    }
+}
+
+
+.social-icons a {
+   color: blueviolet;
+    font-size: 1.7em;
+    padding-right: 30px ;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color:rgb(130, 132, 238) ;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cards{
+    background-color: rgba(137, 43, 226, 0.479);
+}
+.card{
+    background-color: blueviolet;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%  );
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.icon {
+    color: violet;
+    font-size: 8em;
+    text-align: center;
+}
+.info {
+    text-align: center;
+}
+.info h3{
+    color: rgb(247, 0, 255);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects {
+    background-color: black;
+
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card {
+    background-color: blueviolet;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project-card:hover {
+    transform: scale(1.1);
+}
+.project-card:hover .project-image {
+    opacity: 0.7;
+}
+.project-image img{
+    width: 100%;
+}
+.project-info{
+    padding: 1em;
+}
+.project-category {
+    font-size: 0.8em;
+    color: white;
+}
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 10px;
+}
+.detailes{
+    text-decoration: none;
+    color: #12a4b8;
+}
+.detailes:hover {
+    color: rgb(222, 220, 245);
+}
+.cards-contact {
+    background-color: white;
+}
+.cards-contact .icon{
+    font-size: 4.5em;
+
+}
+.cards-contact .info h3 {
+    color: black;
+
+}
+.cards-contact .info p{
+    font-size: 1.5em;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+} 
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: blueviolet;
+} 
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
+@keyframes animate {
+    0%,18%,20%,50.1%,1%,60%,65.1%,80.1%,90.1%,92%
+    {
+        color:#420e3b;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #faeff7;
+        text-shadow: 0 0 10px blueviolet,
+        0 0 20px blueviolet,
+        0 0 40px blueviolet,
+        0 0 80px blueviolet,
+        0 0 160px blueviolet;  
+    }
+}
